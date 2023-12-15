@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/output.css">
+  <script src="./src/js/index.js"></script>
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+
+<body class="min-h-screen text-Charcoal-gray xsm:flex xsm:justify-center xsm:items-center bg-Charcoal-gray">
+  <main class="bg-white xsm:flex xsm:flex-row-reverse xsm:rounded-2xl xsm:w-[58rem] xsm:p-6" id="container">
+    <h1 class="sr-only">Newsletter sign-up form with success message</h1>
+    <!-- Sign-up form start -->
+    <picture>
+      <source media="(min-width: 400px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+      <img src="assets/images/illustration-sign-up-mobile.svg" alt="" class="mb-7 xsm:m-0">
+    </picture>
+    <section class="newsletter md:flex md:flex-col md:justify-center">
+      <h2 class="font-bold text-Dark-slate-gray text-[2.5rem] mb-[0.625rem] md:m-0">Stay updated!</h2>
+
+      <p class="mb-7 xsm:pr-10">Join 60,000+ product managers receiving monthly updates on:</p>
+
+      <ul class="mb-8">
+        <li class="flex items-start gap-3 h-[3.625rem] sm:h-[1.3125rem]"><img src="assets/images/icon-list.svg" alt="">Product discovery and building what matters</li>
+        <li class="flex items-start gap-3 h-[3.625rem] sm:h-[1.3125rem] xsm:mt-2 xsm:mb-2"><img src="assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success</li>
+        <li class="flex items-start gap-3 h-[3.625rem] sm:h-[1.3125rem]"><img src="assets/images/icon-list.svg" alt="">And much more!</li>
+      </ul>
+      <form action="#">
+        <label for="email" class="font-bold text-[0.6875rem] text-Dark-slate-gray xsm:text-[0.875rem]">Email address
+          <input type="email" placeholder="email@company.com" class="block h-[3.5rem] text-base font-normal border-solid border-[#c4c4c6] rounded-lg border-[0.0625rem] w-full pl-6 sm:w-[23.5rem] mb-6">
+        </label>
+        <button type="submit" 
+        class="h-[3.5rem] bg-Dark-slate-gray w-full text-white font-bold rounded-lg sm:w-[23.5rem]">Subscribe to monthly newsletter</button>
+      </form>
+    </section>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <template class="success">
+      <img src="assets/images/icon-success.svg" alt="">
+      <h2>Thanks for subscribing!</h2>
+
+      <p>A confirmation email has been sent to <span>ash@loremcompany.com</span>.
+      Please open it and click the button inside to confirm your subscription.</p>
+
+      <button type="reset">Dismiss message</button>
+    </template>
+    <!-- Success message end -->
+  </main>
+</body>
+
+</html>

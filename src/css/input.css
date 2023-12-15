@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@layer components {
+    #container {
+        box-shadow: 0px -1px 40px 20px #2d2d3f;
+    }
+
+    .newsletter {
+        padding: 0 1.5rem 0 1.5rem;
+    }
+}
+
+@layer utilities {
+
+}
